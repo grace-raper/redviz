@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+  <title>CSE442 | A3</title>
+  <style media="all">
+* { padding: 0; margin: 0; }
+ body {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
+  font-size: 0.95em;
+}
+ a, a:visited { text-decoration: none; color: #7533f4; }
+a:hover { text-decoration: underline; color: #f4b014; }
+ h1, h2, h3, h4, h5 {
+  color: #492a7c;
+  background-color: inherit;
+  font-weight: normal;
+  padding: 0 0 5px 0;
+  margin: 15px 0 0 0;
+  border: none;
+  clear: right;
+}
+h1 { font-size: 24pt; margin:  5px 0 10px 0; line-height: 28px; }
+h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
+h3 { font-size: 13pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 11pt; }
+p { margin: 0 0 10px 0; }
+ .content {
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+ .title, .title h1, .title a {
+  color: #492a7c;
+  font-size: 24pt;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+ .footer {
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+  padding-top: 4px;
+  text-align: right;
+  font-size: 12px;
+}
+.footer a {
+  color: #21346B;
+}
+.footer a:hover {
+  color: #ce3333;
+}
+  </style>
+</head>
+<body>
+<div class="content">
+   <section class="title">
+    <a href="/">The Lasting Effects of Redlining</a>
+  </section>
+
+   <section>
+    <p>
+      <strong>Team Members</strong>: Neha Jagathesan, Grace Raper
+    </p>
+  </section>
+
+   <section>
+    <iframe width="100%" height="500" frameborder="0"
+  src="https://observablehq.com/embed/5e6ecacc96a2336e?cell=*"></iframe>
+  </section>
+
+  <section>
+    <h2>Design Decisions</h2>
+    We went back and forth a lot with the appropriate way to display this data, and what parameters we wanted to display in terms of the HOLC zones. We considered having a single map with a tooltip, that when you hovered over the zones all the data for that zone would be displayed. We did a lot of research for other visualization examples, specifically research that dealth with geographic "zones" similar to the HOLC ones, and their impact. 
+    We arrived at the choice of a linked map because we figured the side by side would allow the users to draw their own conclusions about the coordinating data. Additionally, it proved complex to aggregate data by the geoData boundaries.
+  </section>
+
+  <section>
+    <h2>Development Process</h2>
+    The entire project probably took around 100 hours combined. 
+    At first, a lot of our time was initally spent trying to figure out how to display geoData, something neither of us had done before. Both of us worked on this, and spent time in office hours until we reached a valid solution.
+    The next step was searching for data that would combine well with the HOLC outlines. We worked on data searching individually before coming together and picking the data sets that made the most sent. This was worked on likely for 10 hours combined.
+    Next, we had to decide on how to make the visualization interactive, which we spent a lot of down time on. This was likely the most challenging aspect of this project. We could not decide if we wanted to underlay an undisplayed map underneath the HOLC datasets. 
+    Building the visualization and coding the side by side linked map took the most times. Grace did a lot of the grunt work on coding the side by side map. After Grace was done, Neha looked into how to integrate this side by side map with other sources. Most of our work involved pair programming, either together in person or through screensharing on zoom. 
+  </section>
+
+  <div class="footer">
+    <a href="https://courses.cs.washington.edu/courses/cse442/21au/">CSE 442 Data Visualization</a>
+    <a href="http://www.washington.edu">University of Washington</a>
+  </div>
+ </div>
+</body>
+</html> 
