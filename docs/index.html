@@ -107,6 +107,26 @@ p { margin: 0 0 10px 0; }
     Building the visualization and coding the side by side linked map took the most times. Grace did a lot of the grunt work on coding the side by side map. After Grace was done, Neha looked into how to integrate this side by side map with other sources. Most of our work involved pair programming, either together in person or through screensharing on zoom. 
   </section>
 
+  <div id="observablehq-12c39547">
+    <div class="observablehq-voronoiMap4"></div>
+    <div class="observablehq-highSchoolZoning"></div>
+    <div class="observablehq-censusTracts"></div>
+    <div class="observablehq-voronoiMap2"></div>
+    <div class="observablehq-style"></div>
+    <div style="overflow: hidden;"><a style="display: block; float:right;" href="https://observablehq.com/@grace-raper/redlining-in-seattle"><object type="image/svg+xml" style="pointer-events: none;" width=180 height=22 data="https://static.observableusercontent.com/files/c3fab254a006f1a3a1f9f63aba8ab1460db4752529036b9962950bde0ec195bab823daa6b278b1c3401e545b3bd640ddfdcad805cf9859af218cb2b9fed4ddf0"></object></a></div>
+  </div>
+  <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@grace-raper/redlining-in-seattle.js?v=3";
+    (new Runtime).module(define, name => {
+      if (name === "voronoiMap4") return Inspector.into("#observablehq-12c39547 .observablehq-voronoiMap4")();
+      if (name === "highSchoolZoning") return Inspector.into("#observablehq-12c39547 .observablehq-highSchoolZoning")();
+      if (name === "censusTracts") return Inspector.into("#observablehq-12c39547 .observablehq-censusTracts")();
+      if (name === "voronoiMap2") return Inspector.into("#observablehq-12c39547 .observablehq-voronoiMap2")();
+      if (name === "style") return Inspector.into("#observablehq-12c39547 .observablehq-style")();
+    });
+  </script>
+
   <div class="footer">
     <a href="https://courses.cs.washington.edu/courses/cse442/21au/">CSE 442 Data Visualization</a>
     <a href="http://www.washington.edu">University of Washington</a>
