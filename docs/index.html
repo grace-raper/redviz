@@ -1,136 +1,59 @@
-<!DOCTYPE HTML>
-<html xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>CSE442 | A3</title>
-  <style media="all">
-* { padding: 0; margin: 0; }
- body {
-  margin: 0 auto 0 auto;
-  padding: 0;
-  max-width: 1200px;
-  font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
-  font-size: 0.95em;
-}
- a, a:visited { text-decoration: none; color: #7533f4; }
-a:hover { text-decoration: underline; color: #f4b014; }
- h1, h2, h3, h4, h5 {
-  color: #492a7c;
-  background-color: inherit;
-  font-weight: normal;
-  padding: 0 0 5px 0;
-  margin: 15px 0 0 0;
-  border: none;
-  clear: right;
-}
-h1 { font-size: 24pt; margin:  5px 0 10px 0; line-height: 28px; }
-h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
-h3 { font-size: 13pt; }
-h4 { font-size: 12pt; }
-h5 { font-size: 11pt; }
-p { margin: 0 0 10px 0; }
- .content {
-  margin: 0;
-  padding: 15px 20px;
-  background-color: #ffffff;
-}
- .title, .title h1, .title a {
-  color: #492a7c;
-  font-size: 24pt;
-  margin-bottom: 20px;
-  margin-top: 5px;
-}
- .footer {
-  border-top: 1px solid #ccc;
-  margin-top: 30px;
-  padding-top: 4px;
-  text-align: right;
-  font-size: 12px;
-}
-.footer a {
-  color: #21346B;
-}
-.footer a:hover {
-  color: #ce3333;
-}
-  </style>
+    <meta charset="UTF-8">
+    <title>Redviz - Grace Raper</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<div class="content">
-   <section class="title">
-    <a href="/">The Lasting Effects of Redlining</a>
-  </section>
+<header>
+    <h1>Mapping The Lasting Effects of Redlining</h1>
+</header>
 
-   <section>
-    <p>
-      <strong>Team Members</strong>: Neha Jagathesan, Grace Raper
-    </p>
-  </section>
+<style>
+    iframe {
+        display: block;
+        margin: 0 auto;
+    }
+</style>
 
-   <section>
-    <iframe width="100%" height="500" frameborder="0"
-  src="https://observablehq.com/embed/5e6ecacc96a2336e?cell=*"></iframe>
-  </section>
+<main>
+    <article>
+        <h2>What is Redlining?</h2>
+        <p>Redlining was a discriminatory practice used by banks, insurance companies, and other institutions to deny or limit access to financial services and opportunities, such as loans and insurance, to people living in specific geographic areas based on their race or ethnicity.</p>
+        <p>The Home Owners' Loan Corporation (HOLC) was a federal agency established in 1933 to help homeowners refinance their mortgages during the Great Depression. As part of this effort, the HOLC created maps of urban areas across the United States and assigned grades to different neighborhoods based on their perceived investment risk.</p>
+        <p>These grades ranged from "A" to "D" and were color-coded, with "A" neighborhoods marked in green and "D" neighborhoods marked in red. While factors such as housing quality, property values, and poverty levels were taken into account, neighborhoods with higher minority populations were often rated poorly, regardless of their actual conditions.</p>
+        <p>These grades and color-codes became the basis for the practice of redlining, as banks and other lenders used these maps to justify denying loans or charging higher interest rates to people living in these neighborhoods, regardless of their creditworthiness. This made it more difficult for people from minority groups to buy homes, start businesses, and accumulate wealth, perpetuating cycles of poverty and inequality.</p>
+        <p>Redlining was officially outlawed by the Fair Housing Act of 1968 and the Community Reinvestment Act of 1977, but its legacy can still be felt today in the persistent wealth and income gaps between different racial and ethnic groups.</p>
+    </article>
+    <article>
+        <h2>A Framework for Visualizing Modern Day Data in Historical Context:</h2>
+        <p>The framework below is a web-based visualization that enables users to explore the relationship between historical redlining maps and current-day census data. The visualization is built using D3, a JavaScript library for creating dynamic data visualizations, which allows for the creation of interactive maps.</p>
+        <p>The visualization consists of two maps presented side by side. One of the maps contains the boundary lines of modern-day census tracts, while the other displays historical HOLC redlining maps that have been digitized and georeferenced to align with the modern-day map. Both maps have tooltips that display information about the highlighted location, such as data for each census tract or information about the HOLC rating. When the user hovers over each census tract, the corresponding area on the redlining map is highlighted, making it easy to visualize which HOLC grade (or grades, if multiple areas were covered) the census data aligns with.</p>
+        <p>Future improvements to this visualization could include creating more informative tooltips to display the census data, enabling filtering of census data by demographics, or providing multiple sets of built-in data for the user to explore.</p>
+    </article>
+    <iframe width="1100" height="700" src="https://observablehq.com/embed/@grace-raper/redlining-in-seattle@815?cells=censusTracts"></iframe>
+</main>
 
-  <section>
-    <h2>What is redlining?</h2>
-    Redlining is defined by the Federal Reserve as the "practice of denying a creditworthy applicant a loan for housing in a certain neighborhood even though the applicant may otherwise be eligible for the loan". The practice is rooted in the historical action of mortgage lenders drawing 'red lines' around regions they did not want to offer loans to.
-    Zones that were marked as high-risk loan areas, were also areas made up of majority people of color. The redlining system was primarily designed to protect white, middle-lower class families. Many people of color were forced into neighborhoods with poorer infrastructure, safety, and many urban housing projects.
-  </section>
-  
-  <section>
-    <h2>Who drew these lines?</h2>
-    To answer this question we have to look at HOLC, or the Home Owners' Loan Corporation.
-    HOLC hired mortgage lenders, appraisers, and developers to create color coded maps of loanable zones in many metropolitan areas. Each zone was given a grade from A-D. Grade A neighborhoods were deemed as "best" to grant loans to, and grade D neighborhoods were deemed as "hazardous" for loan approval. Many grade D zones were located in areas with high African American populations and higher populations of people of color.
-  </section>
-    
-  <section>
-    <h2>Understanding HOLC Grades</h2>
-    Below is the descriptions of each HOLC grade, their names colored with their coordinating color on the map.
-    Grade A (Best): Always upper- or upper-middle-class White neighborhoods that HOLC defined as posing minimal risk for banks and other mortgage lenders, as they were "ethnically homogeneous" and had room to be further developed.
-    Grade B (Still Desirable): Generally nearly or completely White, U.S. -born neighborhoods that HOLC defined as "still desirable" and sound investments for mortgage lenders.
-    Grade C (Declining): Areas where the residents were often working-class and/or first or second generation immigrants from Europe. These areas often lacked utilities and were characterized by older building stock.
-    Grade D (Hazardous): Areas here often received this grade because they were "infiltrated" with "undesirable populations" such as Jewish, Asian, Mexican, and Black families. These areas were more likely to be close to industrial areas and to have older housing.
-  </section> 
-  
-  <section>
-    <h2>Design Decisions</h2>
-    We went back and forth a lot with the appropriate way to display this data, and what parameters we wanted to display in terms of the HOLC zones. We considered having a single map with a tooltip, that when you hovered over the zones all the data for that zone would be displayed. We did a lot of research for other visualization examples, specifically research that dealth with geographic "zones" similar to the HOLC ones, and their impact. 
-    We arrived at the choice of a linked map because we figured the side by side would allow the users to draw their own conclusions about the coordinating data. Additionally, it proved complex to aggregate data by the geoData boundaries.
-  </section>
+<main>
+    <article>
+        <h2>Some Potential Applications:</h2>
+        <p>Using this visualization framework, we can examine fields tracked by modern day census data in the context of historical HOLC charts in order to better analyze the lasting impacts of redlining on modern day neighborhoods. There are several fields in modern-day census data that could be impacted by the lasting effects of redlining. Some examples include:</p>
+        <ul>
+            <li>Homeownership rates: Redlining denied many people, particularly people of color, the opportunity to own homes and build wealth. Examining homeownership rates in neighborhoods that were historically redlined can reveal whether the effects of this discrimination persist today.</li>
+            <li>Educational attainment: Redlining often occurred in neighborhoods with underfunded schools and limited resources, which could impact educational attainment. Examining education levels in neighborhoods that were historically redlined can reveal whether these effects continue to impact educational outcomes today.</li>
+            <li>Employment and income: Redlining could limit access to job opportunities and contribute to income inequality. Examining employment and income levels in neighborhoods that were historically redlined can reveal whether these effects persist today.</li>
+            <li>Health outcomes: Redlining could contribute to health disparities by limiting access to healthcare and healthy food options. Examining health outcomes in neighborhoods that were historically redlined can reveal whether these effects continue to impact health outcomes today.</li>
+        </ul>
+        <p>Overall, examining modern-day census data in these and other fields can reveal the lasting impacts of redlining and provide insight into ongoing disparities and inequalities in our communities.</p>
+    </article>
+</main>
 
-  <section>
-    <h2>Development Process</h2>
-    The entire project probably took around 100 hours combined. 
-    At first, a lot of our time was initally spent trying to figure out how to display geoData, something neither of us had done before. Both of us worked on this, and spent time in office hours until we reached a valid solution.
-    The next step was searching for data that would combine well with the HOLC outlines. We worked on data searching individually before coming together and picking the data sets that made the most sent. This was worked on likely for 10 hours combined.
-    Next, we had to decide on how to make the visualization interactive, which we spent a lot of down time on. This was likely the most challenging aspect of this project. We could not decide if we wanted to underlay an undisplayed map underneath the HOLC datasets. 
-    Building the visualization and coding the side by side linked map took the most times. Grace did a lot of the grunt work on coding the side by side map. After Grace was done, Neha looked into how to integrate this side by side map with other sources. Most of our work involved pair programming, either together in person or through screensharing on zoom. 
-  </section>
 
-  <div id="observablehq-12c39547">
-    <div class="observablehq-voronoiMap4"></div>
-    <div class="observablehq-highSchoolZoning"></div>
-    <div class="observablehq-censusTracts"></div>
-    <div class="observablehq-voronoiMap2"></div>
-    <div class="observablehq-style"></div>
-    <div style="overflow: hidden;"><a style="display: block; float:right;" href="https://observablehq.com/@grace-raper/redlining-in-seattle"><object type="image/svg+xml" style="pointer-events: none;" width=180 height=22 data="https://static.observableusercontent.com/files/c3fab254a006f1a3a1f9f63aba8ab1460db4752529036b9962950bde0ec195bab823daa6b278b1c3401e545b3bd640ddfdcad805cf9859af218cb2b9fed4ddf0"></object></a></div>
-  </div>
-  <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-    import define from "https://api.observablehq.com/@grace-raper/redlining-in-seattle.js?v=3";
-    (new Runtime).module(define, name => {
-      if (name === "voronoiMap4") return Inspector.into("#observablehq-12c39547 .observablehq-voronoiMap4")();
-      if (name === "highSchoolZoning") return Inspector.into("#observablehq-12c39547 .observablehq-highSchoolZoning")();
-      if (name === "censusTracts") return Inspector.into("#observablehq-12c39547 .observablehq-censusTracts")();
-      if (name === "voronoiMap2") return Inspector.into("#observablehq-12c39547 .observablehq-voronoiMap2")();
-      if (name === "style") return Inspector.into("#observablehq-12c39547 .observablehq-style")();
-    });
-  </script>
+<footer>
+    <p>&copy; 2023 Grace Raper</p>
+</footer>
 
-  <div class="footer">
-    <a href="https://courses.cs.washington.edu/courses/cse442/21au/">CSE 442 Data Visualization</a>
-    <a href="http://www.washington.edu">University of Washington</a>
-  </div>
- </div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
 </body>
-</html> 
+</html>
